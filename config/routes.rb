@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/admin/preferences', to: 'preferences#index'
   
   namespace :admin do
-  resources :preferences, only: [:index]
+    resources :preferences, only: [:index]
   end
 
 end
