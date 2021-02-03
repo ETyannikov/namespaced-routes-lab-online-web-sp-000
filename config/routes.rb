@@ -5,8 +5,7 @@ Rails.application.routes.draw do
   end
   resources :songs
   
-  get '/admin/preferences', to: 'preferences#index'
-  
+
   namespace :admin do
     resources :preferences
   end
